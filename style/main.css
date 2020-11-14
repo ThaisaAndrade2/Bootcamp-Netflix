@@ -1,0 +1,41 @@
+
+:root{
+    --vermelha: #E50914; /*Definindo como variavel as cores padrões do site*/
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta); /*usando a var criada*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow','Times New Roman', Arial, sans-serif, Times;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row; /*A exibição do nosso container passa a ser por linha*/
+    align-items: center; /*Alinhando verticalmente nossos elementos ao centro*/
+    justify-content: space-between ; /*alinhando horizontamente os elementos e criando espaçamento entre as class/tag logo e nav*/
+}
+
+header .logo{
+    margin-left: 8px ;
+    color: var(--vermelha);
+    font-family: 'Arial';
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff; /*Ao passar o mouse sobre o link irá alterar a cor*/
+}
