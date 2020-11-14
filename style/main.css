@@ -10,9 +10,13 @@
     box-sizing: border-box;
 }
 
+
+/**********ELEMENTOS BASE************/
+
 body {
     background: var(--preta); /*usando a var criada*/
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow','Times New Roman', Arial, sans-serif, Times;
+    font-family: 'Times New Roman','Franklin Gothic Medium', 'Arial Narrow', Times, Arial, sans-serif;
+    color: white;
 }
 
 header .container{
@@ -32,10 +36,45 @@ header .logo{
 
 header nav a {
     text-decoration: none;
-    color: #AAA;
+    color: #fff;
     margin-right: 10px;
 }
 
 header nav a:hover{
-    color: #fff; /*Ao passar o mouse sobre o link irá alterar a cor*/
+    color: #AAA; /*Ao passar o mouse sobre o link irá alterar a cor*/
 }
+
+/**********FILME PRINCIPAL************/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.60)100%),url('../img/capa.jpg') ;
+    
+    height: 400px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+    margin-bottom: 10px;
+}
+
+
+.avaliacao img{
+    margin-bottom: 20px;
+}
+
+button a {
+    text-decoration: none;
+    color: var(--preta);
+}
+
+.titulo{
+    font-size: 40px;
+}
+
