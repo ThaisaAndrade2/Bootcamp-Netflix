@@ -2,6 +2,7 @@
 :root{
     --vermelha: #E50914; /*Definindo como variavel as cores padrões do site*/
     --preta: #141414;
+    --cinza:  #AAA;
 }
 
 *{
@@ -27,7 +28,6 @@ header .container{
 }
 
 header .logo{
-    margin-left: 8px ;
     color: var(--vermelha);
     font-family: 'Arial';
     font-weight: bolder;
@@ -37,11 +37,11 @@ header .logo{
 header nav a {
     text-decoration: none;
     color: #fff;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 header nav a:hover{
-    color: #AAA; /*Ao passar o mouse sobre o link irá alterar a cor*/
+    color: var(--cinza); /*Ao passar o mouse sobre o link irá alterar a cor*/
 }
 
 /**********FILME PRINCIPAL************/
@@ -60,6 +60,10 @@ header nav a:hover{
 
 }
 
+.container{
+    margin-left: 20px ;
+}
+
 .filme-principal .descricao{
     margin-bottom: 10px;
 }
@@ -69,12 +73,30 @@ header nav a:hover{
     margin-bottom: 20px;
 }
 
-button a {
-    text-decoration: none;
-    color: var(--preta);
-}
-
 .titulo{
     font-size: 40px;
 }
+
+.botao {
+    background-color: rgb(255, 255, 255);
+    color:black;
+    font:inherit bold;
+    border: none;
+    opacity: 1;
+
+    
+    border-radius: 4px;
+    padding-left: 2rem;
+    padding-right: 2.4rem;
+    height: 35px;
+    margin-right: 12px;
+    
+}
+
+.bkcolor{
+    background: rgba(109,109,110,0.7);
+    color:white;
+
+}
+
 
